@@ -33,7 +33,7 @@ class Smurfs extends Component {
     .then(response => {
       console.log(response);
       let smurfs = this.state.smurfs;
-      smurfs = smurfs.filter(smurf => smurf.id != response.data.SmurfRemoved.id);
+      smurfs = smurfs.filter(smurf => smurf.id !== response.data.SmurfRemoved.id);
       this.setState({ smurfs: smurfs});
     })
     .catch(err => {

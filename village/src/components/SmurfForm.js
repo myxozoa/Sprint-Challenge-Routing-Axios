@@ -8,7 +8,8 @@ class SmurfForm extends Component {
     this.state = {
       name: '',
       age: '',
-      height: ''
+      height: '',
+      editing: false,
     };
     this.addSmurf = this.addSmurf.bind(this);
     this.updateName = this.updateName.bind(this);
